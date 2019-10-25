@@ -1,0 +1,10 @@
+﻿NAME,BRANCH,SEMESTER,SUB1,SUB2,SUB3,TOTAL
+RAVI,CS,4,78,86,54,
+RAMYA,CS,4,Seventy Six,98,76,
+,,,,,,
+,performance.csv,,,,,
+,1. Read this using pandas,,,,,
+,2. Find duplicate records,,,,,
+,3. Replace Seventy Six with 76,,,,,
+,4. Find sum of individual subjects,,,,,
+,5. Compute Total,,,,,

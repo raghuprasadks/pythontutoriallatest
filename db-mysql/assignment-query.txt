@@ -1,0 +1,59 @@
+db browser for sqlite
+
+SELECT * from customers,order
+where customers.customerid = orders.CustomerID
+
+
+1. Find all customers who has placed orders more than 
+1000
+
+SELECT * FROM customers,orders
+where customers.customerid = orders.customerid
+
+
+
+SELECT * FROM customers,orders,orderdetails,products
+where customers.customerid = orders.customerid and 
+orders.productid = products.productid
+
+
+SELECT orderdetails.orderid,products.productid,products.productname,orderdetails.quantity,products.price,  orderdetails.quantity * products.price as purchaseamt
+
+FROM products,orderdetails where
+products.productid = orderdetails.productid
+group by orderdetails.orderid
+
+
+SELECT orders.customersid,orders.orderid,  sum(orderdetails.quantity * products.price) as purchaseamt
+
+FROM products,orderdetails,orders where
+products.productid = orderdetails.productid and
+orders.orderid = orderdetails.orderid
+group by orderdetails.orderid
+
+
+select * from (SELECT customers.customername,orders.customerid,
+orders.orderid,sum(orderdetails.quantity * products.price) 
+as purchaseamt
+FROM products,orderdetails,orders,customers where
+products.productid = orderdetails.productid and
+orders.orderid = orderdetails.orderid and
+customers.customerid = orders.customerid
+group by orders.customerid,orderdetails.orderid)
+where purchaseamt >1000
+
+
+
+2. Find the product which has sold the most
+3. Find customers who's order is delivered through 'Speedy Express'
+4. Find customers who placed orders between 	1996-07-04
+to 	1996-20-04
+
+1 h
+1 e
+2 l
+2 l
+1 o
+{'h': 1, 'e': 1, 'l': 2, 'o': 1}
+
+items %s : dict_items([('raghu', 9845547472), ('rakesh', 9898989898), ('govind', 8787676765)])

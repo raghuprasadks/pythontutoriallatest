@@ -1,0 +1,16 @@
+1. Find the maximum and minimum element in a list
+without using built-in function
+2. Find whether given number is prime or not
+3. During a festival an e-commerce company has
+come up with an advertisement
+a. You will get discount of 30 % if you buy more 
+than 30000
+b. dicount of 20 % if you purchase between 
+20000 to 30000
+c. discount of 10 % if you purchase less than 20000
+if you are a prime member delivery charges is free
+otherwise delivery charges is 5 % of purcharse amount
+
+Calculate the net amount,discount and delivery charge
+
+Feedback form -https://goo.gl/forms/xYYAUw0Bo6DMedhy2

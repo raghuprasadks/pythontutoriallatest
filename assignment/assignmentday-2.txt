@@ -1,0 +1,12 @@
+1. create a class called IPL
+having attribute season
+
+create following methods
+addTeam(team)
+addPlayer(team,player)
+addMatch(teama,teamb,venue)
+addRuns(player,runs)
+addWickets(player,wickets)
+
+Find the highest wicket taker
+Find the highest run getter
