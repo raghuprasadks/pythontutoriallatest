@@ -23,6 +23,12 @@ print(my_tuple)
 my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
 print(my_tuple)
 
+#my_tuple.append(45)
+lst = my_tuple[1]
+lst.append(15)
+print(my_tuple)
+
+
 # tuple can be created without parentheses
 # also called tuple packing
 # Output: 3, 4.6, "dog"
@@ -72,6 +78,8 @@ a=(5,5)
 b=(5,5)
 if (a>b):
     print("a is bigger")
+elif (b==a):
+    print('a is equal to b')
 else:
     print("b is bigger")
 
@@ -87,6 +95,12 @@ print(type(b))
 #Deleting tuple
 c=(100,101)
 del c
+
+tup = (100,344,885)
+
+newlst = list(tup)
+print(newlst)
+
 #print(c)
 #Max and min
 numberst = (10,5,200,7,1,300)
@@ -108,5 +122,7 @@ tuple1.append(10)
 tuple1.pop()
 tuple1.insert(3,10)
 
-tuple1.count("Hello")
+
+
+
 

@@ -5,7 +5,8 @@ Created on Sun Sep 16 10:15:17 2018
 
 https://www.programiz.com/python-programming/set
 """
-#A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.
+#A set is a collection which is unordered and unindexed. 
+#In Python sets are written with curly brackets.
 #Create a Set:
 thisset = {"apple", "banana", "cherry"}
 
@@ -44,3 +45,32 @@ del thisset
 # The set() Constructor
 thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
 print(thisset)
+
+newset = set(("apple", ("mango","Water Melon"), "cherry")) # note the double round-brackets
+print(newset)
+
+for t in newset:
+    print(t)
+    typeof = type(t)
+    print(typeof)
+    if (isinstance(t, tuple)):
+        print("it's a tuple")
+        
+
+
+def arthoperation(operator,num1, num2):
+    #result = 0
+    formatstr = ''
+    if (operator == '+'):
+        #result = num1+num2
+        formatstr = "{} + {} = {} ".format(num1, num2, num1 + num2)
+    elif (operator == '-'):
+        formatstr = "{} - {} = {} ".format(num1, num2, num1 - num2)
+    else:
+        print('invalid operator ')
+    
+     
+    return formatstr
+
+result = arthoperation ('+',10,5)
+print (result)

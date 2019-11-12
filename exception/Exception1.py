@@ -1,4 +1,7 @@
 #with out expection handling
+
+check = input('Enter data')
+print ('check ',check)
 n = int(input('Enter a number to validate division by zero'))
 
 div = 100/n
@@ -43,7 +46,7 @@ else:
 #Finally Block
 
 try:
-    #a=10/0;
+    a=10/0;
     a=10/2;
     print(a)
 except ZeroDivisionError:
@@ -89,13 +92,19 @@ class Student(object):
 student = Student(name='Jone', age=23, twitter_url='http://twitter.com/jone')
 print(student)
 
-
-class InvalidAge(Exception):
+class InvalidAge(object):
+#class InvalidAge(Exception):
     def __init__(self,data):
      self.data = data
+    
     def __str__(self):
-        return repr('Invalid Age ' +str(self.data))
-
+        print('over riding str')
+        #return repr('Invalid Age ' +str(self.data))
+        return 'Invalid age '
+    '''
+    def __repr__(self):
+        print('overriding repr')
+    '''    
 age = int(input ('Enter your age'))
 if (age >= 18):
     print('you are eligible to vote')
@@ -154,4 +163,59 @@ bal = myact.deposit(101,30000)
 bal = myact.withdraw(101,35000)
 
 print('after initial deposit',bal)
+
+# REPR
+#https://www.journaldev.com/22460/python-str-repr-functions
+
+class Person:
+    name = ""
+    age = 0
+
+    def __init__(self, personName, personAge):
+        self.name = personName
+        self.age = personAge
+
+p = Person('Pankaj', 34)
+
+print(p.__str__())
+print(p.__repr__())
+
+
+
+class Person:
+    name = ""
+    age = 0
+
+    def __init__(self, personName, personAge):
+        self.name = personName
+        self.age = personAge
+
+   
+    def __repr__(self):
+        return '{name:'+self.name+', age:'+str(self.age)+ '}'
+
+    '''
+    def __str__(self):
+        return 'Person(name='+self.name+', age='+str(self.age)+ ')'
+    '''
+
+p = Person('Pankaj', 34)
+
+# __str__() example
+print(p)
+print(p.__str__())
+
+s = str(p)
+print(s)
+
+# __repr__() example
+print(p.__repr__())
+print(type(p.__repr__()))
+print(repr(p))
+
+x = object()
+
+print(dir(x))
+
+
 

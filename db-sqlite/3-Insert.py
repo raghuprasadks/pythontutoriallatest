@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('demosqlnaveena.db')
+conn = sqlite3.connect('infidata.db')
 print("Opened database successfully")
 
 conn.execute("INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) \

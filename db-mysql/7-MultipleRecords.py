@@ -3,16 +3,18 @@ from mysql.connector import Error
 from mysql.connector import errorcode
 try:
    connection = mysql.connector.connect(host='localhost',
-                             database='python_db',
-                             user='pynative',
-                             password='pynative@#29')
+                             database='pythondb',
+                             user='pythonuser',
+                             password='password')
 
-   records_to_insert = [ (2,'Jon','2018-01-11', 26) ,
-                         (3,'Jane','2017-12-11', 27),
-                         (4,'Bill','2018-03-23', 26) ]
+   records_to_insert = [('Raghu','Prasad',45,'M', 10000) ,
+                         ('Ramya','Prasad',40,'F', 12000),
+                         ('Vikas','Ram',24,'M', 12600) ]
 
-   sql_insert_query = """ INSERT INTO python_users (id, name, birth_date, age) 
-                       VALUES (%s,%s,%s,%s) """
+
+   sql_insert_query = "INSERT INTO EMPLOYEE (FIRST_NAME,LAST_NAME, AGE, SEX, INCOME)  VALUES ('%s', '%s', '%d', '%c', '%d')" 
+      
+   #VALUES (%s,%s,%s,%s)
 
    cursor = connection.cursor(prepared=True)
    #used executemany to insert 3 rows

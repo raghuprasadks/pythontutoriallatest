@@ -22,13 +22,21 @@ class Hospital(object):
             'Bed Number': patient.bed_number
             }
             self.patients.append(patient_dictionary)
-            print ('{} has been admitted.'.format(patient.name))
-
+            print ('{} has been admitted. Bed Number is {}'.format(patient.name,patient.bed_number))
+            
     def discharge(self, name):
         for value in self.patients:
             if value['Name'] == name:
                 value['Bed Number'] = None
                 self.patients.remove(value)
+    
+    def viewPatientList(self):
+        print('view')
+        for p in self.patients:
+            print(p)
+            print (p["Name"]," - ",p["Bed Number"])
+        
+        return self.patients
 
 hospital = Hospital('Hospital', 3)
 patient1 = Patient(1, 'Ash', 'Wool', 1)
@@ -37,8 +45,10 @@ patient2 = Patient(2, 'Sterling', 'Chocolate', 3)
 hospital.add(patient2)
 patient3 = Patient(3, 'Alish', 'Puppies', 7)
 hospital.add(patient3)
-
+patientList = hospital.viewPatientList()
 patient4 = Patient(4, 'Andre', 'Kitties', 9)
 hospital.add(patient4)
 hospital.discharge('Alish')
 hospital.discharge('Sterling')
+
+rt=[]

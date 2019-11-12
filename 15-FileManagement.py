@@ -9,12 +9,12 @@ Mode	Description
 '+'	Open a file for updating (reading and writing)
 '''
 def main():
-    f= open("testfile.txt","a")
-    for i in range(1000,1021):
+    f= open("dhanyatest.txt","w")
+    for i in range(50,61):
         f.write("This is new line %d\r\n" % (i))      
     f.close()
     #Open the file back and read the contents
-    f=open("testfile.txt", "r")
+    f=open("dhanyatest.txt", "r")
     if(f.mode == 'r'):
         contents =f.read()
         print(contents)

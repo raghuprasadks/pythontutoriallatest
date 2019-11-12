@@ -4,6 +4,10 @@ class myClass():
         print("myClass:method1")
     def method2(self, name):
         print("myClass:method2:Name " , name)
+    '''
+    def method3():
+        print('without self',name)
+    '''
 
 mycls = myClass()
 mycls.method1()
@@ -13,7 +17,7 @@ mycls1 = myClass()
 mycls1.method1()
 mycls1.method2("Machine Learning")
 
-def main():
+def main1():
     # exercise the class methods
     c = myClass()
     c.method1()
@@ -23,7 +27,7 @@ def main():
     c1.method1()
     c1.method2("Machine Learning")
 if (__name__ == "__main__"):
-    main()
+    main1()
     
 class student():
     def register(self,regno,name,standard,section):        
@@ -109,6 +113,8 @@ class Bank():
        self.address = address
        self.noOfBranch = noOfBranch
        print ('bank details :name ',self.name,' address : ',self.address,' no of branches ',self.noOfBranch )
+   def Bank(self):
+       print('tesing')
        
    def rateOfInterest(self):
        return 0
@@ -143,3 +149,6 @@ kar = Karnataka('Karnataka Bank','Nehru Road,Mangaluru',1003)
 roi = kar.rateOfInterest()
 interest =kar.calculateInterest(100000,roi,1)
 print('interest from karnataka bank is ',interest)
+
+bnk = Bank('RBI','Delhi',10)
+bnk.Bank()

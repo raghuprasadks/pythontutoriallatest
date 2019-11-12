@@ -25,7 +25,6 @@ r.mainloop()
 
 
 import tkinter as tk 
-from tkinter import messagebox
 r = tk.Tk() 
 r.title('Buttons') 
 

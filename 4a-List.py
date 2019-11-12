@@ -11,6 +11,7 @@
 #unordered, changeable and indexed. No duplicate members.
 #List Mutable
 data =[1,2,3,4]
+print(data)
 print(type(data))
 print(data[0])
 print(data[0:4])
@@ -19,7 +20,6 @@ print('new list' , newlist)
 print(data[-1])
 print(data[-4:-1])
 print(data[-4:len(data)])
-
 iteamwc = ['rohit','dhavan','raidu','virat kolhi','kedar']
 wcfinal = iteamwc[0:4]
 print('final team',wcfinal)
@@ -66,8 +66,6 @@ print('Length ',len(list1))
 
 strlist = ['two','three']
 print(min(strlist))
-#list3=[1,2,3]
-#list4=[5,6,7]
 #list sequence - tuple
 seq=(145,'abc','pqr')
 print('type of ', type(seq))
@@ -81,12 +79,12 @@ data=[3,5,6,7]
 print('index of 7 ' ,data.index(7))
 #count - occurance
 data =[1,2,4,3,3,2,1,5,2]
-print('count ',data.count(2))
+print('count ',data.count(3))
 #pop()/pop(int)
-data = [786,'abc','a',123.5,786]
+data = [786,'abc','a',123.5,787]
 print ("Last element is", data.pop() )
 print('after removing ',data)
-print ("2nd position element:", data.pop(1) )
+print ("2nd position element:", data.pop(3) )
 print (data)
 #insert(index,object):
 data=['abc',123,10.5,'a']
