@@ -12,6 +12,16 @@ Multi line comment
 Line 1
 Line 2
 Line 3
+'''
+
+'''
+kddkd
+kdkdk
+kdkdk
+
+'''
+
+
 
 #identifiers
 #valid

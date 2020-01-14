@@ -26,13 +26,14 @@ name = 'guru'
 number = 99
 print(name+number)
 print(name+str(number))
-#Repeat
+#Repeat-
 name = "test"
 print (name*3)
 #Replace
 oldstring = 'I like python'
 newstring = oldstring.replace('like','love')
 print('Replace :',newstring)
+print ('old string 1 ',oldstring)
 oldstring = oldstring.replace('like','love')
 print ('old string ',oldstring)
 #Upper and Lower case
@@ -55,7 +56,8 @@ print('reverse ')
 print(''.join(reversed(oldstring)))
 #Split
 word="Kaushalya Technical Training"
-print(word.split(' '))
+wordlist = word.split(' ') 
+print(wordlist)
 word="Kaushalya Technical Training"
 print(word.split('a'))
 #Immutable
@@ -76,7 +78,7 @@ test.isdecimal()
 " hello world  ".lstrip()
 " hello world  ".strip()
 " hello world  ".rstrip()
-" hello world  ".strip("o")
+" hello world  ".strip("o ")
 " hello world  ".strip("hed ")
 
 'www.example.com'.strip('ecmowz.')

@@ -9,12 +9,12 @@ Mode	Description
 '+'	Open a file for updating (reading and writing)
 '''
 def main():
-    f= open("dhanyatest.txt","w")
+    f= open("dhanyatest.txt","+")
     for i in range(50,61):
         f.write("This is new line %d\r\n" % (i))      
     f.close()
     #Open the file back and read the contents
-    f=open("dhanyatest.txt", "r")
+    f=open("dhanyatest.txt", "+")
     if(f.mode == 'r'):
         contents =f.read()
         print(contents)
@@ -27,24 +27,25 @@ if __name__== "__main__":
   main()
   
 #Open a file in append mode.
-f= open("filedemo05042019.txt","a")    
+f= open("filedemo13112019demo.txt","a")
+print(f)    
 f.write('I am learning python\n')
 f.write('python is easy to learn\n')
 f.close()
  
 #file in write mode.
-f= open("filedemo05042019.txt","w")    
+f= open("filedemo13112019demo.txt","w")    
 f.write('I am learning python\n')
 f.write('python is easy to learn\n')
 f.close()
 
-#Reading a file in write mode.
-f= open("filedemo05042019.txt","r")    
+#Reading a file r mode.
+f= open("filedemo13112019demo.txt","r")    
 print(f.read())
 f.close()
 
 #Reading line by line
-f= open("filedemo05042019.txt","r")    
+f= open("filedemo13112019demo.txt","r")    
 lines = f.readlines()
 for l in lines:
     print(l)
@@ -63,6 +64,41 @@ for l in lines:
             print(token) 
 print('sum : ',sum)
 f.close()
+
+#https://www.tutorialsteacher.com/python/python-read-write-file
+f= open("dhanyatest1.txt","a+")
+f.write('testing')
+f.seek(0,0)
+contents =f.read()
+print(contents)
+print(f.mode)
+f.close()
+
+f=open("binfile.bin","w+b")
+num=[5, 10, 15, 20, 25]
+arr=bytearray(num)
+f.write(arr)
+f.seek(0,0)
+print(list(f.read()))
+f.close()
+f=open("binfile.bin","w+b")
+num=['r', 'a']
+arr=bytearray(str(num),'utf-8')
+f.write(arr)
+f.seek(0,0)
+print((f.read().decode()))
+f.close()
+
+string = "Python is interesting."
+# string with encoding 'utf-8'
+arr = bytearray(string, 'utf-8')
+print(arr)
+
+
+
+
+
+
 
 
 

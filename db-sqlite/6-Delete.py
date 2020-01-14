@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import sqlite3
 
-conn = sqlite3.connect('infidata.db')
+conn = sqlite3.connect('demosqlite.db')
 print ("Opened database successfully")
 
 conn.execute("DELETE from COMPANY where ID = 2;")

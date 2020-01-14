@@ -9,7 +9,6 @@ https://www.programiz.com/python-programming/set
 #In Python sets are written with curly brackets.
 #Create a Set:
 thisset = {"apple", "banana", "cherry"}
-
 #{'cherry', 'apple', 'banana'}
 print(thisset)
 #print(thisset[0])
@@ -45,10 +44,12 @@ del thisset
 # The set() Constructor
 thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
 print(thisset)
+newset = set(("apple","banana"))
+print('newset',newset)
 
-newset = set(("apple", ("mango","Water Melon"), "cherry")) # note the double round-brackets
+newset = set(("apple", ("mango","Water Melon"), "cherry")) 
+# note the double round-brackets
 print(newset)
-
 for t in newset:
     print(t)
     typeof = type(t)
@@ -56,7 +57,6 @@ for t in newset:
     if (isinstance(t, tuple)):
         print("it's a tuple")
         
-
 
 def arthoperation(operator,num1, num2):
     #result = 0

@@ -45,6 +45,9 @@ def simpleInterest(p,r,t):
     return i;
 interest = simpleInterest(1000,6,1)
 #print('Simple interest is ',interest)
+
+name = input('Enter your name')
+print(type(name))
 p = float(input('Enter principal amount'))
 r = float(input('Enter Rate of interest'))
 t = float(input('Enter Time in year'))

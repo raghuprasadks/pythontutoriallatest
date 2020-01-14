@@ -7,10 +7,16 @@ root = Tk()
 root.title("Python: Simple CRUD Applition")
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
+print('width ',screen_width)
+print('height ',screen_height)
+
+
 width = 900
 height = 500
 x = (screen_width/2) - (width/2)
+print('x ',x)
 y = (screen_height/2) - (height/2)
+print('y ',y)
 root.geometry('%dx%d+%d+%d' % (width, height, x, y))
 root.resizable(0, 0)
 

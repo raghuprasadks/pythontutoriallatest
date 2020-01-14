@@ -3,10 +3,13 @@
 #https://pyformat.info/
 
 #old
-'%s %s' % ('one', 'two')
+first='one'
+second = 'two'
+print('first number ',first,' second number ',second)
+'first number %s second number %s' % ('one', 'two')
 
 #new
-'{} {}'.format('one', 'two')
+'{} {} {}'.format('one', 'two','three')
 
 #old
 '%d %d' % (1, 2)
@@ -19,7 +22,9 @@
 #Align right:
 
 #Old
-'%10s' % ('test',)
+'%5s' % ('test')
+'%10s' % ('test')
+
 #New
 '{:>10}'.format('test')
 

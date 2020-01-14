@@ -1,3 +1,19 @@
+age = int(input('Enter your age'))
+if(age>=18):
+    print('you are eligible to vote')
+else:
+    print('you are not eligible to vote')
+marks = int(input('enter your marks'))
+if(marks >90 and marks<=100):
+    print('A+ grade')
+elif (marks >80 and marks<=90):
+    print('A grade')
+elif (marks >70 and marks<=80):
+    print('B grade')
+else:
+    print('grade below B')
+
+
 print(__name__)
 #IF
 def main1():

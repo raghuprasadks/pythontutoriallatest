@@ -5,7 +5,7 @@ from tkinter import *
 # globally declare wb and sheet variable 
 
 # opening the existing excel file 
-wb = load_workbook('E:\\kaushalya.tech\\trainingmaterials\\python\\pythontutorial\\gui\\registrationnew.xlsx') 
+wb = load_workbook('E:\\kaushalya.tech\\trainingmaterials\\python\\pythontutorial\\gui\\registration2.xlsx') 
 
 # create the sheet object 
 sheet = wb.active 
@@ -121,7 +121,7 @@ def insert():
 		sheet.cell(row=current_row + 1, column=7).value = address_field.get() 
 
 		# save the file 
-		wb.save('E:\\kaushalya.tech\\trainingmaterials\\python\\pythontutorial\\gui\\registrationnew.xlsx') 
+		wb.save('E:\\kaushalya.tech\\trainingmaterials\\python\\pythontutorial\\gui\\registration2.xlsx') 
 
 		# set focus on the name_field box 
 		name_field.focus_set() 
@@ -199,15 +199,15 @@ if __name__ == "__main__":
 
 	# whenever the enter key is pressed 
 	# then call the focus1 function 
-    #name_field.bind("<Return>", focus1) 
+    name_field.bind("<Return>", focus1) 
 
 	# whenever the enter key is pressed 
 	# then call the focus2 function 
-	#course_field.bind("<Return>", focus2) 
+	course_field.bind("<Return>", focus2) 
 
 	# whenever the enter key is pressed 
 	# then call the focus3 function 
-	#sem_field.bind("<Return>", focus3) 
+	sem_field.bind("<Return>", focus3) 
 
 	# whenever the enter key is pressed 
 	# then call the focus4 function 

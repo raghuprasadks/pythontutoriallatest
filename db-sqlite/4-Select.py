@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('infidata.db')
+conn = sqlite3.connect('E:\kaushalya.tech\trainingmaterials\sqlite\sqlite-dll-win64-x64-3300100\test.db')
 print("Opened database successfully")
 
 cursor = conn.execute("SELECT id, name, address, salary from COMPANY")

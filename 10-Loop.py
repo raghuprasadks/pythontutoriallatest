@@ -1,3 +1,10 @@
+x=1
+while(x<20):
+   print('Number is ',x)
+   x = x+1
+print(x)
+
+
 #Loop - while
 def whileLoop():
     x=1
@@ -6,6 +13,13 @@ def whileLoop():
         x = x+1
     print(x)
 whileLoop()
+
+r = range(1,10)
+print(r)
+
+for i in range(1,21):
+    print(i)
+    
 #Loop - for loop
 def forLoop():
 #   x=0

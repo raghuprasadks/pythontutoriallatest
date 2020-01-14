@@ -199,10 +199,10 @@ print("{0:4} was founded in {1:16}!"
 	.format("GeeksforGeeks", 2009)) 
 
 # To demonstrate aligning of spaces 
-print("{0:*^16} was founded in {1:*<4}!"
+print("{0:*^16} was founded in {1:#<8}!"
 		.format("GeeksforGeeks", 2009)) 
 
-print("{:*^20s}".format("Geeks")) 
+print("{:*^20}".format("Geeks")) 
 
 '''
 GeeksforGeeks, is the computer science portal for geeks   !

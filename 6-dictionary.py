@@ -16,25 +16,19 @@ del tele ['rakesh']
 print(tele)
 # keys
 print("keys ", tele.keys())
-
 keys = tele.keys()
-
 for k in keys:
     print(k)
     print(type(k))
-    
 type(keys)
 #values 
 print("Values ", tele.values())
-
 values = tele.values()
 for v in values:
     print(v)
-    print (type(v))
-    
+    print (type(v))    
 #items
 print("items %s :",tele.items())
-
 for k,v in tele.items():
     print (k,v)
     print ('keys data type ',type(k))
@@ -55,7 +49,7 @@ for key in Boys.keys():
 #len
 Dict = {'Tim': 18,'Charlie':12,'Tiffany':22,'Robert':25}
 print(" %d elements are in dictionary " % len (Dict))
-print("Length : %d",len (Dict))
+print("Length : ",len (Dict))
 #print(len(Dict), "elements are in dictionary")
 #variable type
 Dict = {'Tim': 18,'Charlie':12,'Tiffany':22,'Robert':25}
@@ -73,7 +67,6 @@ print('new dictionary is ',my_dict)
 my_dict = {1: 'apple', 2: 'ball'}
 # dictionary with mixed keys
 my_dict = {'name': 'John', 1: [2, 4, 3]}
-
 
 # using dict()
 my_dict = dict({1:'apple', 2:'ball'})
@@ -99,7 +92,6 @@ my_dict3 = dict(l3)
 
 for k,v in my_dict3.items():
     print (k,v)
-
 
 #Accessing elements
 my_dict = {'name':'Jack', 'age': 26}

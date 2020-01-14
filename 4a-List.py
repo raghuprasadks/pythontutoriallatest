@@ -84,7 +84,7 @@ print('count ',data.count(3))
 data = [786,'abc','a',123.5,787]
 print ("Last element is", data.pop() )
 print('after removing ',data)
-print ("2nd position element:", data.pop(3) )
+print ("2nd position element:", data.pop(2) )
 print (data)
 #insert(index,object):
 data=['abc',123,10.5,'a']
