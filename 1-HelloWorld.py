@@ -28,7 +28,7 @@ kdkdk
 name ='raghu'
 _fullname ='raghu prasad'
 
-#__fullName ='ravi'
+__fullName ='ravi'
 
 #invalid
 #1stname ='raghu'
