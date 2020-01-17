@@ -152,3 +152,74 @@ print('interest from karnataka bank is ',interest)
 
 bnk = Bank('RBI','Delhi',10)
 bnk.Bank()
+'''
+Method overloading
+'''
+class drawing():
+    def __init__(self,colorPainting,pencilShading=None,caricature=None):
+        self.colorPainting = colorPainting
+        self.pencilShading = pencilShading
+        self.caricature = caricature
+        if (self.colorPainting):
+            print('You have drawn a color painting')
+        if (self.pencilShading):
+            print('You have drawn a pencil shading')
+        if (self.caricature):
+            print('You have drawn a caricature')
+            
+draw = drawing('Gandhi painting')
+
+drawnshade = drawing('Gandhi painting','pencil shading')
+
+drawnshadecari = drawing('Gandhi painting','pencil shading','Caricature')
+
+
+
+
+
+
+
+class vehicle():
+    def buyVehicle(self,make,model,fueltype,price,speed):
+        self.make=make
+        self.model=model
+        self.fueltype=fueltype
+        self.price=price
+        self.speed=speed
+    def start(self):
+        #self.speed=int(self.speed)+0
+        self.speed = 0
+    def accelerate(self):
+        self.speed=self.speed+10
+    def stop(self):
+        self.speed=0
+    def information(self):
+        print('make ',self.make,' model ',self.model,' fueltype ',self.fueltype,' price ',self.price,' speed ',self.speed)
+veh1=vehicle()
+veh1.buyVehicle('honda','city','petrol',100000,0)
+veh1.start()
+veh1.accelerate()
+veh1.information()
+veh1.accelerate()
+veh1.information()
+veh1.stop()
+veh1.information()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
