@@ -205,10 +205,71 @@ veh1.information()
 veh1.stop()
 veh1.information()
     
+'''
+class Coaching
+constructor - name, type,address,city,zipcode,mobile,email,
+
+method called coach()
+	no implementation
+info()
+
+'''
+
+class Coaching():
+    def __init__(self,name, typec,address,city,zipcode,mobile,email):
+        self.name = name
+        self.typec = typec
+        self.address = address
+        self.city = city
+        self.zipcode = zipcode
+    def coach(self):
+        pass
+    def info(self):
+        print('info beging called ')
+        return 'Name : ',self.name, 'Coaching Type :',self.typec
+'''
+class music - inherits from coaching
+method called coach()
+'Learing music'
+'''
+class Music(Coaching):
+    def coach(self):
+        print('Learning Music')
     
+'''
+class instrument - inherits from coaching
+
+additional parameter in the constructor which is instrument
+
+method called coach()
+'coaching with ',instrument
+
+overding info()
+is is printing the instument along with other details
+
+'''
+class Instrument(Coaching):
+    def __init__(self,name, typec,address,city,zipcode,mobile,email,instrument):
+        Coaching.__init__(self,name, typec,address,city,zipcode,mobile,email)
+        self.instrument = instrument
+    def coach(self):
+        print('Coaching with ',self.instrument)
+    def info(self):
+        self.infofromparent = Coaching.info(self)
+        self.info = self.infofromparent,' Instrument : ',self.instrument
+        return self.info
     
-    
-    
+mymusiccls = Music('Raghu ', 'Karnatic','1094,Indushankara','Bengaluru',560077,9008663619,'prasadraghuks@gmail.com')
+
+mymusiccls.coach()
+myclsinfo = mymusiccls.info()  
+print('info about my music class',myclsinfo) 
+
+myinstrumentcls = Instrument('Raghu ', 'Karnatic','1094,Indushankara','Bengaluru',560077,9008663619,'prasadraghuks@gmail.com','violin')
+
+myinstrumentcls.coach()
+myinstinfo = myinstrumentcls.info()  
+print('info about my instrument class',myinstinfo) 
     
     
     
