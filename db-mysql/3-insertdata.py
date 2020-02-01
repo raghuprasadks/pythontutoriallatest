@@ -1,6 +1,6 @@
 import pymysql
 # Open database connection
-db = pymysql.connect("localhost","pythonuser","password","pythondb")
+db = pymysql.connect("localhost","internuser","123","pythoninterndb")
 # prepare a cursor object using cursor() method
 cursor = db.cursor()
 # Prepare SQL query to INSERT a record into the database.

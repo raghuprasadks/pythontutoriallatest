@@ -8,7 +8,7 @@
 #Set is a collection which is unordered and 
 #unindexed. No duplicate members.
 #Dictionary is a collection which is 
-#unordered, changeable and indexed. No duplicate members.
+#unordered, changeable and unindexed. No duplicate members.
 #List Mutable
 data =[1,2,3,4]
 print(data)
