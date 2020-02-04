@@ -92,8 +92,8 @@ class Student(object):
 student = Student(name='Jone', age=23, twitter_url='http://twitter.com/jone')
 print(student)
 
-class InvalidAge(object):
-#class InvalidAge(Exception):
+#class InvalidAge(object):
+class InvalidAge(Exception):
     def __init__(self,data):
      self.data = data
     

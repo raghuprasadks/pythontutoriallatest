@@ -17,6 +17,7 @@ print(tele)
 # keys
 print("keys ", tele.keys())
 keys = tele.keys()
+print(type(keys))
 for k in keys:
     print(k)
     print(type(k))
