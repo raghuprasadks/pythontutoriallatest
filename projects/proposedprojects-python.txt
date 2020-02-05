@@ -1,0 +1,9 @@
+1. Assignment Management System
+
+Mail is sent/SMS is sent
+Alert upon 2 days before the expiration 
+of the assignment
+
+2. Proctor management system
+
+3.
