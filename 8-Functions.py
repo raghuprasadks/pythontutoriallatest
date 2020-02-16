@@ -58,4 +58,17 @@ print('your name is ',name)
 
 
 
+x = 10
+def double():
+    global x
+    print ('inside double ',x)
+    x = x * 2
+    
+double()
+print ('out side of the function ', x)
+
+
+
+
+
 

@@ -96,7 +96,9 @@ print(arr)
 
 
 
-
+with open('testfile.txt', 'r') as reader:
+    # Read & print the entire file
+    print(reader.read())
 
 
 
