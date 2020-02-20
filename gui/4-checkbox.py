@@ -3,6 +3,7 @@
 from tkinter import *
 master = Tk() 
 var1 = IntVar() 
+print('initial value',var1)
 Checkbutton(master, text='male', variable=var1,onvalue=1,offvalue=0).grid(row=0, sticky=W) 
 print('variable 1- male ',var1)
 var2 = IntVar() 

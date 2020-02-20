@@ -4,7 +4,28 @@ print ('Hello World.Welcome to Python')
 a = 10
 b = 20
 print(a+b)
-
+print(type(a))
+a='10'
+print(type(a))
+course = 'python'
+print(course)
+print(type(course))
+isActive = True
+print(isActive)
+print(type(isActive))
+isActive = False
+print(type(isActive))
+data =[2,4,6,8,10]
+print(type(data))
+data=[2,'Four',6,8,10]
+print(data)
+data.append(12)
+days=('Mon','Tue','Wed')
+print(type(days))
+telenos={"raghu":9845547471,"Ravi":9845547472}
+print(type(telenos))
+noset = {1,3,5,7,9}
+print(type(noset))
 #Single line comment
 
 '''

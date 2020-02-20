@@ -4,7 +4,7 @@ if num > 1:
    #     print(i)
         if (num % i) == 0:
             print(num, "is not a prime number")
-            print(i, "times", num // i, "is", num)
+            #print(i, "times", num // i, "is", num)
             break
     else:
         print(num, "is a prime number")
