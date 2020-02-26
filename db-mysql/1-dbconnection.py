@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import pymysql
 # Open database connection
-db = pymysql.connect("localhost","internuser","123","pythoninterndb")
+db = pymysql.connect("localhost","root","kaushalya@123","sindhipython")
 # prepare a cursor object using cursor() method
 cursor = db.cursor()
 # execute SQL query using execute() method.

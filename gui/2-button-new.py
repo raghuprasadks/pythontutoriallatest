@@ -31,6 +31,8 @@ r.title('Buttons')
 def clickme(i):
    messagebox.showinfo( "Hello Python",  i+ " is clicked")
 
+
+
 listbtn = ['First','Second','Third','Fourth']
 
 count=0
@@ -40,5 +42,6 @@ for i in listbtn:
     listbtn[count].pack()
     print('items are',i)
     count+=count
+
 r.mainloop() 
 
