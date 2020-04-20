@@ -27,25 +27,26 @@ if __name__== "__main__":
   main()
   
 #Open a file in append mode.
-f= open("internshippython.txt","a")
-print(f)    
+f= open("marchcoronapython.txt","w")
+#print(f)    
 f.write('I am learning python\n')
 f.write('python is easy to learn\n')
 f.close()
  
-#file in write mode.
-f= open("internshippython.txt","w")    
-f.write('I am learning python..\n')
-f.write('python is easy to learn..\n')
+#file in append mode.
+f= open("marchcoronapython.txt","a")    
+f.write('Month of Corona..\n')
+f.write('Not allowing us to do hindi corona..\n')
+f.write("Using write mode \n")
 f.close()
 
 #Reading a file r mode.
-f= open("internshippython.txt","r")    
+f= open("marchcoronapython.txt","r")    
 print(f.read())
 f.close()
 
 #Reading line by line
-f= open("internshippython.txt","r")    
+f= open("marchcoronapython.txt","r")    
 lines = f.readlines()
 for l in lines:
     print(l)

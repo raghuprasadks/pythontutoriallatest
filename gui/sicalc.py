@@ -2,6 +2,7 @@ from tkinter import *
 class SimpleInterest():
     def __init__(self):
         window = Tk()
+        window.geometry('400x300')
         window.title("Simple Interest Calculator")
         Label(window, text = "Annual Interest Rate").grid(row = 1,column = 1, sticky = W)
         Label(window, text = "Number of Years").grid(row = 2,column = 1, sticky = W)

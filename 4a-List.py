@@ -51,31 +51,36 @@ list1.append(40)
 print('After appending : ', list1)
 list1.append([300,50])
 print('After appending :list ', list1)
+# [10, 20, [300, 50]]
+
 #deleting
 del list1[0]
 del list1[0:2]
 print('List after deleting ',list1)
+del list1
 #Functions and methods of lists
 #Built in function
-list1 = [2,9,3,56,23,89]
+list1 = [2,9,3,56,1,23,89]
 mininum = min(list1)
 print('minimum VALUE',mininum)
 print('Minimum ',min(list1))
 print('Maximum ',max(list1))
 print('Length ',len(list1))
+print('Sum ',sum(list1))
 
 strlist = ['two','three']
 print(min(strlist))
 #list sequence - tuple
-seq=(145,'abc','pqr')
-print('type of ', type(seq))
-data=list(seq)
-print(' sequence ',data)
-print(' type of : ',type(data))
+days=('Monday','Tuesday','Wednesday')
+print('type of ', type(days))
+data=list(days)
+type(data)
+print(data)
 
 #Methods
 #index
 data=[3,5,6,7]
+print(data[3])
 print('index of 7 ' ,data.index(7))
 #count - occurance
 data =[1,2,4,3,3,2,1,5,2]
@@ -99,12 +104,14 @@ data2.extend(data1)
 print (data2)
 #Remove
 data1=['abc',123,10.5,'a','xyz','xyz']
+
 data2=['ram',541]
 print(data1)
 data1.remove('xyz')
 print(data1)
 print (data2)
 data2.remove('ram')
+
 print (data2)
 #Reverse
 list1=[10,20,30,40,50]
@@ -134,3 +141,19 @@ for n in evennumbers:
 data = eval(input('Enter list'))
 print(type(data))
 print(data)
+
+x = 10
+y=20
+result=eval(str(x*y))
+print(result)
+
+
+p=100
+r=5
+t=1
+result = eval(str(p*r*t/100))
+print(result)
+
+
+
+'''karthik'''

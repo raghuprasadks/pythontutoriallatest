@@ -2,7 +2,7 @@
 
 import sqlite3
 
-conn = sqlite3.connect('demosqlite.db')
+conn = sqlite3.connect('ecommerce.db')
 
 print("Opened database successfully")
 

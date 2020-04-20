@@ -1,5 +1,6 @@
 #Dictionary
 tele ={'raghu':9845547471,'rakesh':9898989898,'govind':8787676765}
+print(type(tele))
 print(tele['rakesh'])
 tele ={'raghu':9845547471,'rakesh':9898989898,'govind':8787676765,'raghu':9845547472}
 print(tele['raghu'])
@@ -49,8 +50,15 @@ for key in Boys.keys():
 #Built in function
 #len
 Dict = {'Tim': 18,'Charlie':12,'Tiffany':22,'Robert':25}
+
+print("length of dictionary ",len(Dict))
 print(" %d elements are in dictionary " % len (Dict))
-print("Length : ",len (Dict))
+
+
+name = input("enter your name")
+age = int(input("enter your age"))
+print('your name is ',name)
+print('your name is %s . Your age is %d' %(name,age))
 #print(len(Dict), "elements are in dictionary")
 #variable type
 Dict = {'Tim': 18,'Charlie':12,'Tiffany':22,'Robert':25}
@@ -64,6 +72,32 @@ my_dict = {}
 my_dict['Raghu'] = 8383838838
 my_dict['Raghavendra'] = 9383838838
 print('new dictionary is ',my_dict)
+# Dynamically creating a dictionary
+myfamily = {}
+myfamily['raghu'] = 9845547471
+myfamily['vidya'] = 9008663619
+print(myfamily)
+#name = 'satvik'
+#phone = 8888888888
+name = input("enter the name ")
+phone = int(input("enter the mobile"))
+myfamily[name] = phone
+print(myfamily)
+
+# Dynamically creating a dictionary
+
+friends={}
+
+noofFriends = int(input("enter no of friends"))
+
+for i in range (noofFriends):
+    name = input("Enter name")
+    mobile = int(input("Enter mobile"))
+    friends[name]=mobile
+    
+print('Friends dictionary ',friends)
+    
+
 # dictionary with integer keys
 my_dict = {1: 'apple', 2: 'ball'}
 # dictionary with mixed keys
@@ -82,7 +116,9 @@ type(l1)
 l2 = [[1,"red"],[2,"green"]]
 
 my_dict2 = dict(l2)
-str(my_dict2)
+
+print(type(my_dict2))
+
 
 for k,v in my_dict2.items():
     print (k,v)
@@ -188,17 +224,6 @@ print(sorted(squares))
 #pring key and ntivalues
 for k, v in squares.items():
     print(k, v)
-# Dynamically creating a dictionary
-myfamily = {}
-myfamily['raghu'] = 9845547471
-myfamily['vidya'] = 9008663619
-print(myfamily)
-#name = 'satvik'
-#phone = 8888888888
-name = input("enter the name ")
-phone = int(input("enter the mobile"))
-myfamily[name] = phone
-print(myfamily)
 
 marks = {'raghu':88,'ravi':78,'rakesh':98}
 print(max(marks.values()))

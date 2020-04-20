@@ -12,26 +12,36 @@ top.mainloop()
 
 
 
+
 import tkinter as tk 
 r = tk.Tk() 
-r.title('Counting Seconds') 
-button = tk.Button(r, text='Stop', width=25, command=r.destroy)
-button1 = tk.Button(r, text='Start', width=30, command=r.destroy)
-
- 
+counter = 0
+def start():
+    global counter
+    counter = counter +1
+    print('start clicked :',counter)
+def stop():
+    global counter
+    counter = 0
+    print('stop clicked')
+    
+r.title('Multiple buttons') 
+button = tk.Button(r, text='Start', width=25, command=start)
+button1 = tk.Button(r, text='Stop', width=30, command=stop)
+button2 = tk.Button(r, text='Quit', width=30, command=r.destroy)
 button.pack() 
 button1.pack()
+button2.pack()
 r.mainloop() 
 
 
 import tkinter as tk 
+from tkinter import messagebox
 r = tk.Tk() 
 r.title('Buttons') 
 
 def clickme(i):
    messagebox.showinfo( "Hello Python",  i+ " is clicked")
-
-
 
 listbtn = ['First','Second','Third','Fourth']
 

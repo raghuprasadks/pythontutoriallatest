@@ -22,6 +22,16 @@ double = lambda x: x * 2
 print(double(5))
 #Filter
 my_list = [1, 5, 4, 6, 8, 11, 3, 12]
+even_list = []
+
+for i in my_list:
+    if (i%2==0):
+        even_list.append(i)
+print("Even list ",even_list)
+
+
+
+
 new_list = list(filter(lambda x: (x%2 == 0) , my_list))
 # Output: [4, 6, 8, 12]
 print(new_list)

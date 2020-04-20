@@ -18,18 +18,27 @@ print ("x" not in var2)
 #Formatting -
 name = 'guru'
 number1 = 99
-number2 = 99.5
+number2 = 99.5788
 print("name",name,"age is ",number1)
-print("name is %s age is %d. Amount is %10.2f" %(name,number1,number2))
+print("name is %s age is %d. Amount is %5.2f" %(name,number1,number2))
+#name is guru age is 99. Amount is      99.58
+#name is guru age is 99. Amount is 99.58
+#name is guru age is 99. Amount is 99.58
+#name is guru age is 99. Amount is99.58
+#name is guru age is 99. Amount is99.58
+#name is guru age is 99. Amount is 99.58
 #Concatenate
 name = 'guru'
 number = 99
 print(name+number)
 print(name+str(number))
+print(10+20)
+print(str(10)+str(20))
+
 #Repeat-
 name = "test"
 print (name*3)
-#Replace
+#Replace - Immutalble
 oldstring = 'I like python'
 newstring = oldstring.replace('like','love')
 print('Replace :',newstring)
@@ -37,9 +46,9 @@ print ('old string 1 ',oldstring)
 oldstring = oldstring.replace('like','love')
 print ('old string ',oldstring)
 #Upper and Lower case
-convertlower = 'This Is for LOWER'
-print(newstring.upper())
-print(convertlower.lower())
+data = 'This Is for LOWER'
+print(data.upper())
+print(data.lower())
 #capitalize
 name = 'delhi is capital of india'
 print('capitalize ', name.capitalize())
@@ -56,30 +65,54 @@ print('reverse ')
 print(''.join(reversed(oldstring)))
 #Split
 word="Kaushalya Technical Training"
-wordlist = word.split(' ') 
+wordlist = word.split(' ')
+#['Kaushalya', 'Technical', 'Training'] 
 print(wordlist)
 word="Kaushalya Technical Training"
 print(word.split('a'))
+
+strchk = "is it going to rain today.Yes it is"
+
+chksplit = strchk.split("is")
+print(chksplit)
 #Immutable
-x = "Kaushalya"
+x = "Kaushalya technical training"
 y=x.replace("Kaushalya","Python Training")
 print(y)
 print(x)
 #count
-count1 = x.count('a',0,len(x))
-print('count ',count1)
+count1 = x.count('a')
+print('Count of a ',count1)
+count2 = x.count('a',0,10)
+print('count ',count2)
 test = '123'
+test1 ='python'
 test.isdigit()
 test.isalpha()
 test.isdecimal()
+test1.isalpha()
 "Hello This".istitle()
-"hello".ljust(10,"*")
+"hello ".ljust(10,"*")
+#"hello*****"
 "hello".rjust(10,"*")
+#'*****hello'
 " hello world  ".lstrip()
+#'hello world  '
 " hello world  ".strip()
+#'hello world'
 " hello world  ".rstrip()
-" hello world  ".strip("o ")
+#' hello world'
+" hello world  ".strip("d ")
+#'hello worl'
+" hello world  ".strip("l")
+#' hello world  '
+
 " hello world  ".strip("hed ")
+#'llo worl'
+
+" hello world  ".strip("held ")
+#'o wor'
+
 
 'www.example.com'.strip('ecmowz.')
 
@@ -121,6 +154,7 @@ cinvalid = 0
 if(length <6 or length >12):
     print('You have to enter password of minimum length 6 and maximum 12')
 else:
+    #karthik@123
     for p in password:
         if(p.isupper()):
             cuppercase = cuppercase + 1
@@ -138,4 +172,21 @@ else:
 if (cuppercase > 0 and clowercase >0 and cNumber >0 and cSplChar >0):
     print('You have entered valid password')
 else:
-    print('Password is invalid')                
+    print('Password is invalid')       
+
+
+
+for i in "karnataka":
+    print(i)
+
+mystr = "karnataka"
+
+mystr[0]
+strlen = len(mystr)
+i = 0
+while (i <strlen):
+    char = mystr[i]
+    i++
+    
+
+         

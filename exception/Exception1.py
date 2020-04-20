@@ -1,12 +1,27 @@
 #with out expection handling
-
-check = input('Enter data')
-print ('check ',check)
 n = int(input('Enter a number to validate division by zero'))
-
 div = 100/n
-
 print('result is ',div)
+
+d=int(input('Enter a number to validate zero division'))
+try:
+    a=100/d
+    print(a)
+except:
+    print('Exception : Enter a positive number')
+else:
+    print('No exception')
+
+
+d=int(input('Enter a number to validate zero division'))
+try:
+    a=100/d
+    print(a)
+except Exception as e:
+    print('Exception occured ',e)
+else:
+    print('No exception')
+
 
 
 d = int(input('Enter a number to validate division by zero'))
@@ -24,14 +39,14 @@ print ('after the exception')
 try:
     a=10/'a'
     print(a)
-except:
-    print("Exception")
+except Exception as e:
+    print("Exception : ",e)
 else:
     print("Proceed no exception")
 
 #Declaring multiple exception
 try:
-    a=10/0
+    #a=10/0
     a=10/'raghu'
     print(a)
 #except ArithmeticError,NameError: - 3.6 does not support
@@ -46,13 +61,26 @@ else:
 #Finally Block
 
 try:
-    a=10/0;
+    #a=10/0;
     a=10/2;
     print(a)
 except ZeroDivisionError:
     print(ZeroDivisionError)
 finally:
     print("Finally block is always called")
+a=2
+print('value of a ',a)
+try:
+   a=10/0;
+   a=10/2;
+   print(a)
+except ZeroDivisionError:
+   print(ZeroDivisionError)
+finally:
+    #print(a)
+    b=29/(a+2)
+    print("Finally block is always called and the result is: ",b)
+
 
 #Raise an exception
 
@@ -61,8 +89,8 @@ try:
     print(a)
     raise NameError("Hello")
 except NameError as e:
-    print("An exception occured")
-    print(e)
+    print("An exception occured :",e)
+    
 #Custom exception
 class ErrorInCode(Exception):
     def __init__(self,data):
@@ -98,7 +126,7 @@ class InvalidAge(Exception):
      self.data = data
     
     def __str__(self):
-        print('over riding str')
+        #print('over riding str')
         #return repr('Invalid Age ' +str(self.data))
         return 'Invalid age '
     '''
@@ -134,9 +162,7 @@ class InsufficientBal(Exception):
     def __str__(self):
         return repr('Insufficient balance ' +str(self.amt))
     
- 
-
-    
+   
 class Account():
     def __init__(self,actno,name,mobile,email,idproof):
         self.actno = actno

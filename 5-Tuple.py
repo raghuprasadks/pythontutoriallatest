@@ -3,9 +3,10 @@
 #https://www.geeksforgeeks.org/tuples-in-python/
 months =('Jan','Feb','Mar','Apr')
 print("Tuple months :",months)
+print("Slicing : ",months[0:2])
 numbers =(1,2,3,4,5,6)
 print("Tuple numbers :",numbers)
-print("Slicing : ",months[0:2])
+
 # empty tuple
 # Output: ()
 my_tuple = ()

@@ -1,10 +1,11 @@
 import sqlite3
 
-conn = sqlite3.connect('E:\kaushalya.tech\trainingmaterials\sqlite\sqlite-dll-win64-x64-3300100\test.db')
+conn = sqlite3.connect('ecommerce.db')
 print("Opened database successfully")
 
-cursor = conn.execute("SELECT id, name, address, salary from COMPANY")
-for row in cursor:
+records = conn.execute("SELECT id, name, address, salary from COMPANY")
+print(type(records))
+for row in records:
    print("ID = ", row[0])
    print("NAME = ", row[1])
    print("ADDRESS = ", row[2])

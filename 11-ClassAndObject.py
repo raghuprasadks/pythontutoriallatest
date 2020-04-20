@@ -80,6 +80,10 @@ d.eat()
 d.bark()
 d.weep()
 
+'''
+Method overriding - polymorphism
+'''
+
 #Inheritance
 class myClass():
     def method1(self):
@@ -90,6 +94,9 @@ class myClass():
         print ("You are from ", city)
 #class childClass():
 class childClass(myClass):
+    '''
+    overriding
+    '''
     def method1(self):
         #myClass.method1(self)
         print("ChildClass:method1")
@@ -123,9 +130,6 @@ class Bank():
        return p*r*t/100
 
 class SBI(Bank):
-   def __init__(self,name,address,noOfBranch):
-       print('init of sbi')
-       Bank.__init__(self,name,address,noOfBranch)
        
    def rateOfInterest(self):
        print('interest rate of sbi')
@@ -173,12 +177,6 @@ drawnshade = drawing('Gandhi painting','pencil shading')
 
 drawnshadecari = drawing('Gandhi painting','pencil shading','Caricature')
 
-
-
-
-
-
-
 class vehicle():
     def buyVehicle(self,make,model,fueltype,price,speed):
         self.make=make
@@ -204,6 +202,19 @@ veh1.accelerate()
 veh1.information()
 veh1.stop()
 veh1.information()
+
+
+class Scooter (vehicle):
+    '''
+    Method overriding
+    '''
+    def start(self):
+        #self.speed=int(self.speed)+0
+        print('Button start')
+        self.speed = 0
+
+myScooter = Scooter("Hero","plesure",'petrol',65000,0) 
+myScooter.start() 
     
 '''
 class Coaching

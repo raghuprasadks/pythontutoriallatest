@@ -63,8 +63,8 @@ def clear():
 # Driver code 
 if __name__ == "__main__": 
 	# create a GUI window 
-	gui = Tk() 
-
+	gui = Tk()
+    #gui.geometry('500x400')
 	# set the background colour of GUI window 
 	gui.configure(background="light green") 
 
