@@ -282,9 +282,23 @@ myinstrumentcls.coach()
 myinstinfo = myinstrumentcls.info()  
 print('info about my instrument class',myinstinfo) 
     
+'''
+static method
+'''    
+class calculator():
+    def __init__(self,n1,n2):
+        self.n1 = n1
+        self.n2 = n2  
+    def add(self):
+        return self.n1+ self.n2    
+    @staticmethod
+    def sub(n1,n2):
+        return n1 - n2
     
     
-    
+calci = calculator(100,50)
+print('add : ',calci.add())
+print('subtract ',calculator.sub(100,30))
     
     
     

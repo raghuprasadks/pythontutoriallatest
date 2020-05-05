@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('ecommerce.db')
+conn = sqlite3.connect('ecommerceaprlnew.db')
 print("Opened database successfully")
 
 records = conn.execute("SELECT id, name, address, salary from COMPANY")

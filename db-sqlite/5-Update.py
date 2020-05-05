@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('ecommerce.db')
+conn = sqlite3.connect('ecommerceaprlnew.db')
 print("Opened database successfully")
 
 conn.execute("UPDATE COMPANY set SALARY = 25000.00 where ID = 1")

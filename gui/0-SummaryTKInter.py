@@ -4,22 +4,19 @@ from tkinter import *
 '''
 1. Frame
 '''
-
 # create root window
-
-'''
 def test(self):
     print('left button clicked')
-'''    
+  
 root = Tk()
 #give a title for root window
 root.title("My Frame")
 
 #create a frame as child to root window
 f = Frame(root,height=400,width = 500,bg="yellow", cursor="cross")
-'''
+
 f.bind('<Button-1>', test)
-'''
+
 f.pack()
 root.mainloop()
 
@@ -374,8 +371,8 @@ class SICalculator():
         self.l3 = Label(text='Time')
         
         self.l1.place(x=50,y=100)
-        self.l2.place(x=50,y=250)
-        self.l3.place(x=50,y=450)
+        self.l2.place(x=50,y=150)
+        self.l3.place(x=50,y=200)
         
         #Entry for user name
         
@@ -387,7 +384,7 @@ class SICalculator():
         
         self.e1.place(x=150,y=100)
         self.e2.place(x=150,y=150)
-        self.e3.place(x=150,y=250)
+        self.e3.place(x=150,y=200)
         self.e3.bind("<Return>",self.display)
         
     def display(self,event):
@@ -397,7 +394,7 @@ class SICalculator():
         interest = float(str1)*float(str2)*float(str3)/100
         strinterest = str(interest)
         # display the values uisng labels
-        lbl1 = Label(text='Interest is : '+strinterest).place(x=150,y=200)
+        lbl1 = Label(text='Interest is : '+strinterest).place(x=150,y=300)
         
 root = Tk()
 me = SICalculator(root)

@@ -13,12 +13,13 @@ else:
     print('No exception')
 
 
-d=int(input('Enter a number to validate zero division'))
+d=input('Enter a number to validate zero division')
 try:
     a=100/d
     print(a)
 except Exception as e:
-    print('Exception occured ',e)
+    print('Enter a number to validate zero division')
+    print('Exception occured ',e.trace())
 else:
     print('No exception')
 
@@ -55,6 +56,7 @@ except ZeroDivisionError:
 except ArithmeticError:
     print("ArithmeticError")
 except:
+    
     print("Generic Error")
 else:
     print("Successfully Done")
@@ -185,8 +187,10 @@ class Account():
     
 myact = Account(101,'raghu',9845547471,'prasadraghuks@gmail.com','adhar')
 bal = myact.deposit(101,30000)
-
-bal = myact.withdraw(101,35000)
+try:
+    bal = myact.withdraw(101,35000)
+except Exception as e:
+    print('exception ',e)
 
 print('after initial deposit',bal)
 
@@ -243,5 +247,59 @@ x = object()
 
 print(dir(x))
 
+'''
+class calculator
+add(n1,n2)
+sub(n1,n2)
+mul
+div
 
 
+write expection class to hangle folloing scenarios
+if (n1 <0) then raise InvaidData
+if (n1  or n2 is a charecter then raise InvalidDataFormat)
+'''
+
+
+#Calculator
+n1= int (input ("Enter the value of number one"))
+n2= int (input("Enter the value of number two"))
+
+class Calculator():
+    Add=0
+    Sub=0
+    Div=0
+    Multi=0
+    
+try:
+    Add=n1 + n2
+    Sub=n1 - n2
+    Div=n1/n2
+    Multi=n1*n2
+
+
+    
+except (n1<0):
+        print("Invalid data")
+except (type(n1)==char or type(n2)==char):
+        print ("Invalid data")
+          
+else:
+    print ("Successfully done")
+    print ("Addition is",Add)
+    print ("Subtraction is",Sub)
+    print ("Division is",Div)
+    print ("Multiplication is",Multi)
+    
+
+class InvalidDataException(Exception):
+    def __init__(self,data):
+        self.data = data
+        
+    def __str__(self):
+        return 'Invalid Data '
+
+class Calculator():
+    def add(self,n1,n2):
+        if (n1 < 0 ):
+            raise InvalidDataException(n1)
